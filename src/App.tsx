@@ -1,10 +1,11 @@
-import React from 'react'
+// import React from 'react'
 import './App.css'
 import './index.css'
 import ErrorBoundary from './utils/ErrorBoundary'
-import Landing from './pages/Landing';
+// import Landing from './pages/Landing';
 import store from './store/configStore.tsx'
 import { Provider } from "react-redux";
+import ReportRequestForm from './components/reportRequestForm.tsx';
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
     <>
       <Provider store={store}>
         <ErrorBoundary>
-          <Landing />
+          <ReportRequestForm />
         </ErrorBoundary>
       </Provider>
 
